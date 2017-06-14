@@ -1,0 +1,41 @@
+#Content{
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #cbcbcb;
+}
+
+
+
+form div{
+  margin-top: 5px
+}
+#img_div{
+  width: 80%;
+  padding: 5px;
+  margin: 15px auto;
+  border: 1px solid #cbcbcb;
+}
+
+#img_div::after{
+  content: "";
+  display: block;
+  clear:both
+}
+
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+
+
+
+
+
+
