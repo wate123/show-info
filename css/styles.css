@@ -1,0 +1,102 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.theme-dropdown .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+    margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+    width: auto;
+}
+
+.navbar-header {
+    padding-left: 40px;
+    background: url(../img/graph.png) 0 50% no-repeat;
+}
+/*
+#hot {
+    overflow: hidden;
+    margin-bottom: 18px;
+}*/
+    #hot th .input-sm , #hot th .input-group-addon {
+        height: 25px;
+        -webkit-box-sizing: border-box!important;
+        -moz-box-sizing: border-box!important;
+        box-sizing: border-box!important;
+    }
+    #hot th .input-group-addon {
+        cursor: pointer;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+#preview {
+
+}
+    #preview .panel-body {
+        width: 240px;
+        padding: 0;
+    }
+    #preview .btn-group {
+        width: 100%;
+    }
+    #preview .btn {
+        width: 50%;
+    }
+
+@media (max-width: 991px) {
+    #preview {
+        position: static;
+    }
+}
+
+#options-size {
+    width: 100%;
+}
+    #options-size > div {
+        margin-bottom: 8px;
+    }
+    #options-size label {
+        width: 140px;
+    }
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 100px;
+    color: #777;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Fix Google styles */
+.modal-dialog.google-visualization-charteditor-dialog {
+    z-index: 200;
+    width:auto;
+    height:auto;
+    margin: 0;
+}
+
+.modal-dialog.google-visualization-charteditor-dialog * {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+}
+.google-visualization-charteditor-name-input {
+    padding: 2px !important;
+}
+/* Fix Bootstrap styles after Google */
+#embed-modal .modal-dialog{
+    padding: 0;
+    background: transparent;
+    position: relative;
+    border:0;
+}
