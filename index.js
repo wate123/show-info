@@ -172,7 +172,7 @@
           var aElement = $('<a>');
           // Setting the href value to '#' ensures that the browser renders the
           // &lt;a&gt; element as a clickable link.
-          aElement.attr('href', '#');
+          aElement.attr('href', '#Video');
           aElement.text(title);
           aElement.click(function() {
             displayVideoAnalytics(videoId);
@@ -274,7 +274,7 @@
       var chartDataArray = [columns].concat(response.rows);
       var chartDataTable = google.visualization.arrayToDataTable(chartDataArray);
 
-      var chart = new google.visualization.LineChart(document.getElementById('chart'));
+      var chart = new google.visualization.LineChart(document.getElementById('chart-youtube'));
       chart.draw(chartDataTable, {
         // Additional options can be set if desired as described at:
         // https://developers.google.com/chart/interactive/docs/reference#visdraw
@@ -295,4 +295,3 @@
     $('#message').hide();
   }
 })();
-analytics_codelab.js
