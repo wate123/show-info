@@ -16,9 +16,9 @@ OS X & Linux:
 ```sh
 Install and run a virtual web service (I am using xampp).
 Import the test.sql to mysql database using phpmyadmin.
-Create a folder call "database" in htdoc folder.<br/>
-&nbsp;&nbsp;For mac user, /Applications/XAMPP/xamppfiles/htdocs 
-&nbsp;&nbsp;For linux user, /opt/lampp/htdocs.<br/>
+Create a folder call "database" in htdoc folder.
+  For mac user, /Applications/XAMPP/xamppfiles/htdocs 
+  For linux user, /opt/lampp/htdocs.
 clone or put all the source files into database folder.
 Open a browser, Type in localhost/database/index.php.
 ```
@@ -29,7 +29,7 @@ Windows:
 Install and run a virtual web service (I am using xampp).
 Import the test.sql to mysql database using phpmyadmin.
 Create a folder call "database" in htdoc folder.
-&nbsp;&nbsp;For windows user, C://xampp/htdocs.
+  For windows user, C://xampp/htdocs.
 clone or put all the source files into database folder.
 Open a browser, Type in localhost/database/index.php.
 ```
