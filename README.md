@@ -5,9 +5,9 @@ Display Dynamic information
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-![](screenshot/Capture1.png)
-![](screenshot/Capture2.png)
-![](screenshot/Capture3.png)
+![alt text](https://github.com/wate123/website/blob/master/screenshot/Capture1.PNG)
+![alt text](https://github.com/wate123/website/blob/master/screenshot/Capture2.PNG)
+![alt text](https://github.com/wate123/website/blob/master/screenshot/Capture3.PNG)
 
 ## Installation
 
