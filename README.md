@@ -5,9 +5,9 @@ Display Dynamic information
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-<img src="https://github.com/wate123/website/blob/master/screenshot/Capture1.PNG" width="100">
-<img src="https://github.com/wate123/website/blob/master/screenshot/Capture1.PNG" width="100">
-<img src="https://github.com/wate123/website/blob/master/screenshot/Capture1.PNG" width="100">
+<img src="https://github.com/wate123/website/blob/master/screenshot/Capture1.PNG" width="500">
+<img src="https://github.com/wate123/website/blob/master/screenshot/Capture2.PNG" width="500">
+<img src="https://github.com/wate123/website/blob/master/screenshot/Capture3.PNG" width="500">
 
 ## Installation
 
