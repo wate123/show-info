@@ -11,6 +11,11 @@ Display Dynamic information
 
 ## Installation
 
+**You Must go to https://console.developers.google.com/apis/library to enable Youtube Data API and Youtube Analytics API Before using Youtube Report.**<br/>
+<br/>
+**You Must Create your own Client ID in https://console.developers.google.com/apis/credentials and replace the Variable value of OAUTH2_CLIENT_ID in index.js.**<br/>
+
+
 OS X & Linux:
 
 ```sh
