@@ -5,9 +5,9 @@ Display Dynamic information
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-![](./screenshot/Capture1.png =200x100)
-![](./screenshot/Capture2.png =200x100)
-![](./screenshot/Capture3.png =200x100)
+<img src="https://github.com/wate123/website/blob/master/screenshot/Capture1.PNG" width="100">
+<img src="https://github.com/wate123/website/blob/master/screenshot/Capture1.PNG" width="100">
+<img src="https://github.com/wate123/website/blob/master/screenshot/Capture1.PNG" width="100">
 
 ## Installation
 
