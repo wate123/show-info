@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="image.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <script type="text/javascript" src="javascrit.js"></script>
     <link rel="stylesheet" href="css/handsontable.bootstrap.css">
@@ -123,7 +124,8 @@
       }
     }
        ?>
-      <form method="post" enctype="multipart/form-data" style="margin-left:20px;margin-right:20px;">
+       <div class="center-upload">
+      <form method="post" enctype="multipart/form-data">
         <div class="form-group">
           <label for="files">Upload Files</label>
           <input type="file" id="files" name="files">
@@ -131,6 +133,21 @@
         </div>
         <button type="submit" class="btn btn-primary">Upload</button>
       </form>
+      </div>
+      <style>
+      .center-upload
+      {
+
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+      }
+      </style>
+    </br>
       <p></br></p>
       <div class="container">
         <ul class="nav nav-tabs" role="tablist" id="myTab">
@@ -142,6 +159,7 @@
 
         <div class="tab-content">
           <div  class="tab-pane fade in active" id="image">
+
             <?php
             $stmt = $conn->prepare("select * from imageDB");
             $stmt->execute();
@@ -150,8 +168,8 @@
              ?>
             <div class="responsive">
             <div class="col-lg-4 col-md-3">
-              <div class="thumbnail">
-                <img style="height:200px; width:350px" src="uploads/<?php echo $row['image'] ?>" alt="<?php echo $row['image'] ?>" title="<?php echo $row['image'] ?>">
+              <div class="thumbnail" data-toggle="modal" data-target="#image-gallery">
+                <img class="myImg"  style="height:200px; width:350px" src="uploads/<?php echo $row['image'] ?>" alt="<?php echo $row['image'] ?>" title="<?php echo $row['image'] ?>">
                 <div class="caption text-center">
                   <p><a href="?delete=<?php echo $row['image'] ?>&id=<?php echo $row['id'] ?>" class="btn btn-primary" role="button">Delete</a></p>
                 </div>
@@ -161,6 +179,39 @@
             <?php
             }
             ?>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = $('.myImg');
+            var modalImg = $("#img01");
+            var captionText = document.getElementById("caption");
+            $('.myImg').click(function(){
+                modal.style.display = "block";
+                var newSrc = this.src;
+                modalImg.attr('src', newSrc);
+                captionText.innerHTML = this.alt;
+            });
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            </script>
+
           </div>
 
           <div  class="tab-pane fade" id="table">
@@ -230,6 +281,17 @@
         </div>
         <!-- pull the data from youtube analytics -->
         <div  class="tab-pane fade" id="youtube">
+          <!-- <form method="post">
+            <h1>Please Enter Your Youtube Analytics Client ID</h1>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon">Youtube Client ID</span>
+              <input id="clientIDd" name="clientID" type="text" class="form-control" aria-describedby="basic-addon1">
+              <span class="input-group-btn">
+                <button class="btn btn-primary"  type="submit" onclick="analytics()">Submit</button>
+              </span>
+            </div>
+          </form> -->
+
           <div id="login-container" class="pre-auth">This application requires access to your YouTube account.
             Please <a href="#" id="login-link">authorize</a> to continue.
           </div>

@@ -1,6 +1,7 @@
 (function() {
   // Retrieve your client ID from the {{ Google Cloud Console }} at
   // {{ https://cloud.google.com/console }}.
+  // 975363526269-thnopg16l9fivqf45u5t1nehp4s17e52.apps.googleusercontent.com
   var OAUTH2_CLIENT_ID = '975363526269-thnopg16l9fivqf45u5t1nehp4s17e52.apps.googleusercontent.com';
   var OAUTH2_SCOPES = [
     'https://www.googleapis.com/auth/yt-analytics.readonly',
