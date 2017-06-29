@@ -14,24 +14,24 @@ Display Dynamic information
 OS X & Linux:
 
 ```sh
-Install and run a virtual web service (I am using xampp).<br />
-Import the test.sql to mysql database using phpmyadmin.<br />
+Install and run a virtual web service (I am using xampp).
+Import the test.sql to mysql database using phpmyadmin.
 Create a folder call "database" in htdoc folder.<br/>
-&nbsp;&nbsp;For mac user, /Applications/XAMPP/xamppfiles/htdocs <br />
+&nbsp;&nbsp;For mac user, /Applications/XAMPP/xamppfiles/htdocs 
 &nbsp;&nbsp;For linux user, /opt/lampp/htdocs.<br/>
-clone or put all the source files into database folder.<br/>
-Open a browser, Type in localhost/database/index.php.<br />
+clone or put all the source files into database folder.
+Open a browser, Type in localhost/database/index.php.
 ```
 
 Windows:
 
 ```sh
-Install and run a virtual web service (I am using xampp).<br />
-Import the test.sql to mysql database using phpmyadmin.<br />
-Create a folder call "database" in htdoc folder.<br/>
-&nbsp;&nbsp;For windows user, C://xampp/htdocs.<br/>
-clone or put all the source files into database folder.<br/>
-Open a browser, Type in localhost/database/index.php.<br />
+Install and run a virtual web service (I am using xampp).
+Import the test.sql to mysql database using phpmyadmin.
+Create a folder call "database" in htdoc folder.
+&nbsp;&nbsp;For windows user, C://xampp/htdocs.
+clone or put all the source files into database folder.
+Open a browser, Type in localhost/database/index.php.
 ```
 
 ## Usage example
