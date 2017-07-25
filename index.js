@@ -1,7 +1,7 @@
 (function() {
   // Retrieve your client ID from the {{ Google Cloud Console }} at
   // {{ https://cloud.google.com/console }}.
-  var OAUTH2_CLIENT_ID = '1009003973293-ijssh50horqpqi4l8pf5jac3tgapjunt.apps.googleusercontent.com';
+  var OAUTH2_CLIENT_ID = 'REPLACE_THIS';
   var OAUTH2_SCOPES = [
     'https://www.googleapis.com/auth/yt-analytics.readonly',
     'https://www.googleapis.com/auth/youtube.readonly'
