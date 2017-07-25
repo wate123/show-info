@@ -18,11 +18,11 @@ chart = {
     // default options for ChartWrapper
     default: {
       width: 800,
-      height: 500
+      height: 380
     },
     // options for ChartWrapper
     options: {
-
+      is3D: true,
     },
     /**
      * google.visualization.ChartWrapper

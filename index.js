@@ -1,7 +1,7 @@
 (function() {
   // Retrieve your client ID from the {{ Google Cloud Console }} at
   // {{ https://cloud.google.com/console }}.
-  var OAUTH2_CLIENT_ID = 'Your_Client_ID';
+  var OAUTH2_CLIENT_ID = '1009003973293-ijssh50horqpqi4l8pf5jac3tgapjunt.apps.googleusercontent.com';
   var OAUTH2_SCOPES = [
     'https://www.googleapis.com/auth/yt-analytics.readonly',
     'https://www.googleapis.com/auth/youtube.readonly'
@@ -172,7 +172,7 @@
           var aElement = $('<a>');
           // Setting the href value to '#' ensures that the browser renders the
           // &lt;a&gt; element as a clickable link.
-          aElement.attr('href', '#Video');
+          aElement.attr('href', '#');
           aElement.text(title);
           aElement.click(function() {
             displayVideoAnalytics(videoId);
@@ -274,7 +274,7 @@
       var chartDataArray = [columns].concat(response.rows);
       var chartDataTable = google.visualization.arrayToDataTable(chartDataArray);
 
-      var chart = new google.visualization.LineChart(document.getElementById('chart-youtube'));
+      var chart = new google.visualization.BarChart(document.getElementById('chart-youtube'));
       chart.draw(chartDataTable, {
         // Additional options can be set if desired as described at:
         // https://developers.google.com/chart/interactive/docs/reference#visdraw

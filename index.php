@@ -26,7 +26,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <link type="text/css" rel="stylesheet" href="index.css">
     <script type="text/javascript" src="//www.google.com/jsapi"></script>
     <script type="text/javascript" src="index.js"></script>
@@ -159,7 +158,6 @@
 
         <div class="tab-content">
           <div  class="tab-pane fade in active" id="image">
-
             <?php
             $stmt = $conn->prepare("select * from imageDB");
             $stmt->execute();
@@ -211,10 +209,9 @@
               modal.style.display = "none";
             }
             </script>
-
           </div>
 
-          <div  class="tab-pane fade" id="table">
+          <div class="tab-pane fade" id="table">
               <div class="container theme-showcase" role="main">
                 <div class="row">
                     <div class="col-xs-12 col-md-8" role="main" >
@@ -251,55 +248,49 @@
                 </div>
                 <div class="footer ">
                     <div class="btn-group" role="group">
-                        <button id="chart-generate" type="button"  data-toggle="modal" class="btn btn-primary">Generate Chart</button>
+                        <button type="button"  data-toggle="modal" class="btn btn-primary" data-target="#embed-modal">Generate Chart</button>
                         <button id="chart-editor" type="button" class="btn btn-default">Edit Chart</button>
                     </div>
                 </div>
               </br>
+
+
               <div class="modal fade" id="embed-modal" tabindex="-1" role="dialog" aria-labelledby="embedLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                            <h4 class="modal-title" id="embedLabel">Charts is ready!</h4>
-                        </div>
-                        <div class="modal-body">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-lg-2"></div>
-                              <div id="chart"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="embedLabel">Charts is ready!</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="chart"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
-            </div>
               </div>
+
+              <!-- fix the z axis problem of modal -->
+              <script>
+              $('.modal').on('shown.bs.modal', function() {
+              $(this).css("z-index", parseInt($('.modal-backdrop').css('z-index')) + 1);
+              });
+              </script>
+
+              </div>
+
         </div>
         <!-- pull the data from youtube analytics -->
         <div  class="tab-pane fade" id="youtube">
-          <!-- <form method="post">
-            <h1>Please Enter Your Youtube Analytics Client ID</h1>
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon">Youtube Client ID</span>
-              <input id="clientIDd" name="clientID" type="text" class="form-control" aria-describedby="basic-addon1">
-              <span class="input-group-btn">
-                <button class="btn btn-primary"  type="submit" onclick="analytics()">Submit</button>
-              </span>
-            </div>
-          </form> -->
-
           <div id="login-container" class="pre-auth">This application requires access to your YouTube account.
             Please <a href="#" id="login-link">authorize</a> to continue.
           </div>
           <div class="post-auth">
-          </br>
             <h3> <div><span class="label label-default">Choose a Video:</span></div></h3>
+            </br>
             <ul id="video-list"></ul>
-          </br>
             <div id="message"></div>
             <div id="chart-youtube"></div>
           </div>

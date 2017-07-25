@@ -96,7 +96,7 @@ footer {
 /* Fix Bootstrap styles after Google */
 #embed-modal .modal-dialog{
     padding: 0;
-    background: transparent;
+    /*background: transparent;*/
     position: relative;
     border:0;
 }
